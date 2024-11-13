@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .clock, .search-container, .bookmark-container, .todo-container {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .clock {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .search-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .bookmark-container, .todo-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5757ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6a6aff;
+  }
+  
+  /* Common styles */
+.container {
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  h2 {
+    color: #f5f5f5;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5757ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6a6aff;
+  }
+  
+  /* Bookmark Section */
+  .bookmark-container {
+    display: flex;
+    flex-direction: column;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .bookmark-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bookmark-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bookmark-item:hover {
+    background-color: #444;
+  }
+  
+  .bookmark-item a {
+    color: #fff;
+    text-decoration: none;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .bookmark-item button {
+    background-color: #ff5f5f;
+  }
+  
+  .bookmark-item button:hover {
+    background-color: #ff8080;
+  }
+  
+  /* To-Do List Section */
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item:hover {
+    background-color: #444;
+  }
+  
+  .todo-item span {
+    color: #fff;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .todo-item button {
+    background-color: #5fff5f;
+  }
+  
+  .todo-item button:hover {
+    background-color: #80ff80;
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  /* Bookmark Section */
+.bookmark-container {
+    display: flex;
+    flex-direction: column;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .bookmark-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bookmark-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bookmark-item:hover {
+    background-color: #444;
+  }
+  
+  .bookmark-item a {
+    color: #fff;
+    text-decoration: none;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .bookmark-item button {
+    background-color: #ff5f5f;
+  }
+  
+  .bookmark-item button:hover {
+    background-color: #ff8080;
+  }
+  
+  .bookmark-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #f5f5f5;
+    width: 45%;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5757ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6a6aff;
+  }
+  

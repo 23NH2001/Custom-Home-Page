@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Clock -->
+    <div id="clock" class="clock"></div>
+
+    <!-- Search Engine -->
+    <div class="search-container">
+      <input id="search" type="text" placeholder="Search Google...">
+      <button onclick="searchGoogle()">🔍</button>
+    </div>
+
+    <!-- Bookmark Section -->
+    <div class="bookmark-container">
+        <h2>Bookmarks</h2>
+        <div id="bookmarks" class="bookmark-list"></div>
+        <div class="bookmark-input">
+          <input type="text" id="bookmarkName" placeholder="Bookmark Name">
+          <input type="text" id="bookmarkUrl" placeholder="Bookmark URL">
+          <button onclick="addBookmark()">➕</button>
+        </div>
+    </div>
+      
+
+    <!-- To-Do List Section -->
+    <div class="todo-container">
+      <h2>To-Do List</h2>
+      <ul id="todoList" class="todo-list"></ul>
+      <input type="text" id="todoInput" placeholder="Add a new task">
+      <button onclick="addTodo()">Add Task</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
